@@ -149,6 +149,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(
+            0deg,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url(/images/hero-bgc.jpg);
+    background-repeat: no-repeat;
+    background-size: 1600px;
+    background-position: center;
 }
 
 .hero-hover {
@@ -199,6 +208,16 @@ body {
 }
 .properties-details {
     width: 270px;
+}
+
+.properties-logo {
+    background-color: var(--button-backgrownd);
+    width: 270px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-radius: 4px;
 }
 
 /*What we do*/
@@ -377,7 +396,7 @@ body {
 
 /* Наши клиенты */
 
-.clients-hover {
+.clients-heading {
     color: var(--title-text-color);
     font-style: normal;
     font-weight: 700;
@@ -400,17 +419,31 @@ body {
 }
 
 .client-icon {
-    width: 170px;
-    height: 92px;
-    fill: darkblue;
+    fill: #afb1b8;
 }
 .clients-list-item + .clients-list-item {
     margin-left: 30px;
 }
 .clients-list-item {
-    border: 1px;
-    border-color: #afb1b8;
+    padding: 0px;
 }
+.client-link {
+    width: 170px;
+    height: 92px;
+    padding: 0px;
+    background-color: var(--body-backgrownd);
+    border-color: #afb1b8;
+    border-width: 1px;
+    border-radius: 4px;
+}
+.client-link:hover {
+    border-color: var(--accent-color);
+    cursor: pointer;
+}
+.client-icon:hover {
+    fill: var(--accent-color);
+}
+
 /*Footer*/
 
 .page-footer {
@@ -444,7 +477,7 @@ body {
     padding-bottom: 0px;
 }
 .text .footer-contacts-nav:first-child {
-    padding-top: 20px;
+    margin-top: 20px;
 }
 .footer-decoration > .contacts-nav {
     color: rgba(255, 255, 255, 0.6);
@@ -462,24 +495,14 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-    padding-bottom: 9px;
     margin-bottom: 9px;
 }
 
 .footer-contacts-nav {
     padding-left: 0px;
     list-style-type: none;
-    margin-bottom: 0px;
+    margin-bottom: 9px;
     margin-top: 0px;
-    padding-bottom: 9px;
-}
-
-.footer-contacts-nav .nav-link:last-child {
-    padding-bottom: 0px;
-}
-
-.footer-list .footer-contacts-nav:last-child {
-    padding-bottom: 0px;
 }
 
 .footer-list:first-child {
@@ -501,6 +524,66 @@ body {
     padding-top: 20px;
 }
 
+.footer-sotials-heading {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3%;
+    line-height: 1.17;
+    color: var(--footer-text-color);
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.footer-sotials {
+    padding-top: 72px;
+    margin-left: 70px;
+}
+
+.footer-sotials-list {
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.footer-sotials-list-item {
+    margin-right: 10px;
+}
+
+.footer-sotial-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-sotials-link {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: currentColor;
+    color: var(--footer-text-color);
+}
+.footer-sotials-list-item:nth-child(2) {
+    background-color: var(--accent-color);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    padding-right: 0px;
+}
+.footer-sotials-list .footer-sotials-list-item:last-child {
+    margin-right: 0px;
+}
+
+.for-flex {
+    display: flex;
+}
 /*Portfolio buttons*/
 
 .portfolio-buttons {
@@ -515,8 +598,12 @@ body {
     padding-left: 0px;
 }
 .portfolio-button {
-    padding-left: 8px;
+    margin-left: 8px;
     padding-right: 0px;
+}
+.portfolio-button:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-buttons .portfolio-button:first-child {
     padding-left: 0px;
@@ -538,6 +625,10 @@ body {
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
+}
+.portfolio-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-item:nth-child(3n) {
     margin-right: 0;

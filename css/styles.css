@@ -114,10 +114,33 @@ body {
     text-decoration: none;
 }
 
-.contacts-nav a:hover {
-    color: var(--accent-color);
+.contacts-item {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
 }
 
+.contacts-nav-link {
+    background-color: var(--body-backgrownd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: currentColor;
+    color: var(--subtitle-text-color);
+}
+.contacts-nav-link:hover {
+    color: var(--accent-color);
+}
+.contacts-nav-icon-mailto {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+.contacts-nav-icon-phonenumber {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+}
 /* Hero Section*/
 
 .hero-section {
@@ -275,9 +298,41 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     margin-top: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 }
 
+.co-worker-sotials {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    padding-bottom: 30px;
+}
+
+.co-worker-sotials-item + .co-worker-sotials-item {
+    margin-left: 10px;
+}
+
+.co-worker-sotials-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--body-backgrownd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: currentColor;
+    color: #afb1b8;
+}
+
+.co-worker-sotials-link:hover {
+    color: #ffffff;
+    background-color: var(--accent-color);
+}
+.co-worker-sotial-icon {
+    width: 20px;
+    height: 20px;
+}
 /* Button */
 .button {
     color: var(--title-text-color);
@@ -318,6 +373,21 @@ body {
 .portfolio-button {
     padding-right: 8px;
     border-radius: 4px;
+}
+
+/* Наши клиенты */
+
+.clients-hover {
+    color: var(--title-text-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.06em;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding-top: 94px;
 }
 
 /*Footer*/

@@ -390,6 +390,27 @@ body {
     padding-top: 94px;
 }
 
+.clients-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 88px;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.client-icon {
+    width: 170px;
+    height: 92px;
+    fill: darkblue;
+}
+.clients-list-item + .clients-list-item {
+    margin-left: 30px;
+}
+.clients-list-item {
+    border: 1px;
+    border-color: #afb1b8;
+}
 /*Footer*/
 
 .page-footer {
